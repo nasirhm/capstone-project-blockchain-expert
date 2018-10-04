@@ -1,6 +1,6 @@
-pragma solidity ^0.4.11;
+pragma solidity ^0.4.25;
 
-contract capstone {
+contract LandContract {
     address owner;
     mapping (address => uint) public balances;
     
@@ -29,30 +29,30 @@ contract capstone {
     
     constructor() public {
         owner = msg.sender;
-        lands[0].price = 4000;
+        lands[0].price = 1000;
         lands[0].forSale = true;
-        lands[1].price = 4000;
-        lands[1].forSale = true;
-        lands[2].price = 4000;
+        lands[1].price = 2000;
+        lands[1].forSale = false;
+        lands[2].price = 3000;
         lands[2].forSale = true;
         lands[3].price = 4000;
-        lands[3].forSale = true;
-        lands[4].price = 4000;
+        lands[3].forSale = false;
+        lands[4].price = 5000;
         lands[4].forSale = true;
-        lands[5].price = 4000;
-        lands[5].forSale = true;
-        lands[6].price = 4000;
+        lands[5].price = 6000;
+        lands[5].forSale = false;
+        lands[6].price = 7000;
         lands[6].forSale = true;
-        lands[7].price = 4000;
-        lands[7].forSale = true;
-        lands[8].price = 4000;
+        lands[7].price = 8000;
+        lands[7].forSale = false;
+        lands[8].price = 9000;
         lands[8].forSale = true;
-        lands[9].price = 4000;
-        lands[9].forSale = true;
-        lands[10].price = 4000;
+        lands[9].price = 10000;
+        lands[9].forSale = false;
+        lands[10].price = 11000;
         lands[10].forSale = true;
-        lands[11].price = 4000;
-        lands[11].forSale = true;
+        lands[11].price = 12000;
+        lands[11].forSale = false;
     }
     
     function putLandUpForSale(uint index, uint price) public {

@@ -54,7 +54,9 @@ contract LandContract {
         lands[11].price = 12000;
         lands[11].forSale = false;
     }
-    
+    function registerLand(uint index, uint price) {
+        
+    }
     function putLandUpForSale(uint index, uint price) public {
         Land storage land = lands[index];
         require(msg.sender == land.owner && price > 0);

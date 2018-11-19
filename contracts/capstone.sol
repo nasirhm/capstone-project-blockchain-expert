@@ -27,7 +27,7 @@ contract LandContract {
         bool forSale
     );
     
-    constructor() public {
+    function LandContract() public {
         owner = msg.sender;
         lands[0].price = 1000;
         lands[0].forSale = true;
